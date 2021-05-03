@@ -45,6 +45,13 @@ export class HttpService {
     return resp.json();
   }
 
+  // logout();
+  async logout() {
+    const resp: any = await this.http.get(this.apiURL + 'user/logout', this.headers).toPromise();
+    console.log('from http service logout() ', resp.json());
+    return resp.json();
+  }
+
   get headers() {
     const token = localStorage.getItem('id_token') || null;
     const headers = new Headers({ 'Content-Type': 'application/json' });
