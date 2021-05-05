@@ -1,4 +1,4 @@
-.login-grid {
+/* .login-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
@@ -15,4 +15,166 @@
   display: block;
   height: 200px;
   margin: -25px -25px 25px -25px;
+} */
+
+.form-check {
+  color: white;
+  padding: 20px;
+  padding-left: 0px;
+}
+.form-control {
+  background-color: black;
+  color: white;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-image: url(../../../img/ofGBM3Q9QVDLg8WUnoSMSN.jpg);
+  margin: 0px !important;
+}
+
+/* .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+} */
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box-shadow {
+  -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+}
+
+.main-container-grid {
+  display: grid;
+  height: 100%;
+  background-color: #DADED4;
+
+}
+
+.white {
+  color: white;
+}
+.logo {
+  color:white;
+  text-align: -webkit-center;
+  font-size: xxx-large;
+}
+.r1,
+.r3 {
+  display: grid;
+  background-color: #040406a8;
+  padding: 1em;
+  align-items: center;
+}
+
+.r3 {
+  text-align: center;
+}
+
+.r2 {
+  height: 100%;
+  /* background-color: #f1f1f1; */
+}
+
+.one-column {
+  display: grid;
+  /* background-color: #DADED4; */
+  grid-column-gap: 1em;
+}
+
+.c1 {
+  min-width: 200px;
+}
+
+.c1,
+.c3 {
+  background-color: #A3BCB6;
+}
+
+.txt-center {
+  text-align: center;
+  margin: 15px auto 0px;
+  border-bottom: 1px solid #39603D;
+  padding-bottom: 15px;
+}
+
+.left-nav {
+  list-style-type: none;
+}
+
+.left-nav>li>a {
+  display: block;
+  padding: 15px 0px 15px 30px;
+  background-color: #A3BCB6;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.7s;
+}
+
+.left-nav>li>a:hover {
+  background-color: lightsteelblue;
+}
+
+.c2 {
+  padding: 2em;
+}
+
+.h2-content {
+  grid-column: 1 / 5;
+  height: 22px;
+  width: 100%;
+}
+
+.c2>img {
+  width: 100%;
+  align-self: center;
+  max-height: 130px;
+}
+
+.contact-form {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  margin-top: 300px;
+}
+
+.contact-input {
+  width: 91%;
+  padding: 15px;
+  margin: 5px;
+  background-color: black;
+}
+
+.submit-button {
+  padding: 10px 25px;
+  background-color: #CCC;
+  float: right;
+  margin-top: 12px;
+}
+
+.error-message {
+  color: red;
+  display: block;
+  padding: 7px;
+  margin-top: 5px;
+  display: none;
 }

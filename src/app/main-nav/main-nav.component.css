@@ -1,4 +1,4 @@
-.nav-action-container {
+/* .nav-action-container {
   margin: 20px auto;
   width: 90%;
 }
@@ -25,4 +25,34 @@
 
 .brand {
   height: 65px;
+} */
+
+/* .r1,
+.r3 {
+  display: grid;
+  background-color: black;
+  padding: 1em;
+  align-items: center;
 }
+
+.white {
+  color: white;
+}
+.logo {
+  color:white;
+  text-align: -webkit-center;
+  font-size: xxx-large;
+}
+
+.box-shadow {
+  -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+}
+
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+} */
+
