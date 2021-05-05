@@ -4,15 +4,6 @@ import { Router } from '@angular/router';
 import { ToastService } from '../toast/toast.service';
 import { HttpService } from '../../shared-service/http.service';
 
-export interface IRoll {
-  id?: number;
-  name: string;
-  type: string;
-  barrel: string;
-  ammo: string;
-  perkOne: string;
-  perkTwo: string;
-}
 
 @Component({
   selector: 'app-roll',
@@ -21,14 +12,12 @@ export interface IRoll {
 })
 export class RollComponent implements OnInit {
 
-  bikes: Array<IRoll> = [];
-  myName = '';
   rolls = [];
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private toastService: ToastService,
-    private http: HttpService
+    private http: HttpService,
   ) { }
 
   async ngOnInit() {
@@ -87,6 +76,14 @@ export class RollComponent implements OnInit {
     } else {
       this.toastService.showToast('danger', 3000, 'Delete roll failed!');
 
+    }
+  }
+
+  async logout() {
+    const resp = await this.http.logout();
+    if (resp.statusCode == 200) {
+      localStorage.removeItem('id_token');
+      this.router.navigate(['login']);
     }
   }
 

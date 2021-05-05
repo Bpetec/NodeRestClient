@@ -16,6 +16,7 @@ import { CartComponent } from './cart/cart.component';
 import { SharedServiceModule } from '../shared-service/shared-service.module';
 import { RollComponent } from './roll/roll.component';
 import { AboutComponent } from './about/about.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     CartComponent,
     RollComponent,
-    AboutComponent
+    AboutComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { AboutComponent } from './about/about.component';
     AppRoutes,
     BrowserAnimationsModule,
     MaterialDesignModule,
-    SharedServiceModule
+    SharedServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

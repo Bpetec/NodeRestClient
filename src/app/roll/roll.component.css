@@ -16,8 +16,21 @@
   overflow: auto;
 }
 
+.logDiv {
+  margin-top: -36px;
+}
+.logBtn {
+  float:right;
+  width:min-content;
+}
 .form-check {
   float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.label-margin {
+  margin-top:10px;
 }
 
 .info-area {
@@ -39,6 +52,7 @@
 .navBtn {
   max-width: min-content;
   margin-right: 2em;
+  padding: 1em;
 }
 
 

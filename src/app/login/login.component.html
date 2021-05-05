@@ -1,22 +1,22 @@
 <body class="main-container-grid">
   <div class="r1 box-shadow">
-    <h2 class="logo box-shadow">GodRolls.GG</h2>
+    <h2 class="logo logo-text box-shadow">GodRolls.GG</h2>
   </div>
   <div class="r2 one-column">
     <div class="c2">
       <form class="contact-form center">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
+          <label for="exampleInputEmail1" class="white">Email</label>
           <input [(ngModel)]="user.email" name="email" type="text" class="form-control" id="exampleInputEmail1"
-            aria-describedby="emailHelp" placeholder="Email">
+            aria-describedby="emailHelp" placeholder="Enter Email">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
+          <label for="exampleInputPassword1" class="white">Password</label>
           <input [(ngModel)]="user.password" name="password" type="password" class="form-control"
-            id="exampleInputPassword1" placeholder="Password">
+            id="exampleInputPassword1" placeholder="Enter Password">
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input type="checkbox" class="form-check-input check" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Remember Me?</label>
         </div>
         <button mat-raised-button color="primary" (click)="login(user)">Login</button>
