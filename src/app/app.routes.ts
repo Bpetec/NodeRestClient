@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { RollComponent } from './roll/roll.component';
 import { AboutComponent } from './about/about.component';
 import { UsersComponent } from './users/users.component';
+import { PicksComponent } from './picks/picks.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +20,9 @@ const appRoutes: Routes = [
   }, {
     path: 'users',
     component: UsersComponent
+  }, {
+    path: 'picks',
+    component: PicksComponent
   }
 ];
 

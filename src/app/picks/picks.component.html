@@ -1,0 +1,49 @@
+<div class="r1 box-shadow">
+  <h2 class="logo logo-text box-shadow">GodRolls.GG</h2>
+  <br>
+  <div class="navContainer">
+    <button type="button" class="navBtn btn btn-light" [routerLink]="['']">Home</button>
+    <button type="button" class="navBtn btn btn-light" [routerLink]="['picks']">Seasonal Picks</button>
+    <button type="button" class="navBtn btn btn-light" [routerLink]="['/about']">About</button>
+    <button type="button" class="navBtn btn btn-light" [routerLink]="['/users']">Users</button>
+  </div>
+  <div class="logDiv">
+    <button mat-raised-button color="accent" class="logBtn" *ngIf="!currentUser" (click)="logout()">Logout</button>
+  </div>
+
+</div>
+<div class="info-text">
+  <h2>Here you can find some of the most popular weapons of the season</h2>
+</div>
+<div class="contact-grid">
+  <div class="gallery-grid">
+    <div class="pickDiv">
+      <label class="label-margin logo-text" for="name"><b>Igneous Hammer</b></label>
+      <br>
+      <img class="icon" src="https://www.bungie.net/common/destiny2_content/icons/02c83ceb4f02a667667056e82da59a77.jpg"
+        alt="IgneousHammer">
+      <p class="label-margin"><b>Source: </b>Trials of Osiris</p>
+    </div>
+    <div class="pickDiv">
+      <label class="label-margin logo-text" for="name"><b>Extraordinary Rendition</b></label>
+      <br>
+      <img class="icon" src="https://www.bungie.net/common/destiny2_content/icons/33ad579bafeb07ca5ffb3de002d83f07.jpg"
+        alt="ExtraordinaryRendition">
+      <p class="label-margin"><b>Source: </b>Battlegrounds</p>
+    </div>
+    <div class="pickDiv">
+      <label class="label-margin logo-text" for="name"><b>Shadow Price</b></label>
+      <br>
+      <img class="icon" src="https://www.bungie.net/common/destiny2_content/icons/23490c10750a585e19f97ae27fbca362.jpg"
+        alt="ShadowPrice">
+      <p class="label-margin"><b>Source: </b>Nightfall</p>
+    </div>
+    <div class="pickDiv">
+      <label class="label-margin logo-text" for="name"><b>Code Duello</b></label>
+      <br>
+      <img class="icon" src="https://www.bungie.net/common/destiny2_content/icons/b26cdf54dad7e11b345d4be630ce2c28.jpg"
+        alt="IgneousHammer">
+      <p class="label-margin"><b>Source: </b>Battlegrounds</p>
+    </div>
+  </div>
+</div>

@@ -24,6 +24,7 @@ export class RollComponent implements OnInit {
     await this.refresh();
     // this.createRoll('roll', { make: 'Tesla', model: 'X'});
     // this.updateRoll('roll/id/1', { make: 'Ford', model: 'Fiasta'});
+    // Possibly use to test users?
   }
 
   async refresh() {
@@ -65,7 +66,7 @@ export class RollComponent implements OnInit {
     }
     return resp;
   }
-
+// Test if update roll can be removed from the server and still update (trouble shooting users)
   async removeRoll(roll: any, index: number) {
     console.log('from removeRoll...', index);
     // this.rolls.splice(index, 1);
@@ -81,7 +82,7 @@ export class RollComponent implements OnInit {
 
   async logout() {
     const resp = await this.http.logout();
-    if (resp.statusCode == 200) {
+    if (resp.statusCode === 200) {
       localStorage.removeItem('id_token');
       this.router.navigate(['login']);
     }

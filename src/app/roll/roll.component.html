@@ -3,10 +3,11 @@
   <br>
   <div class="navContainer">
     <button type="button" class="navBtn btn btn-light" [routerLink]="['']">Home</button>
+    <button type="button" class="navBtn btn btn-light" [routerLink]="['picks']">Seasonal Picks</button>
     <button type="button" class="navBtn btn btn-light" [routerLink]="['about']">About</button>
-    <!-- <button type="button" class="navBtn btn btn-light" [routerLink]="['users']">Users</button> -->
+    <button type="button" class="navBtn btn btn-light" [routerLink]="['users']">Users</button>
   </div>
-  <div class="logDiv"> 
+  <div class="logDiv">
     <button mat-raised-button color="accent" class="logBtn" *ngIf="!currentUser" (click)="logout()">Logout</button>
   </div>
 
@@ -300,16 +301,22 @@
         <p>
           <label for="source">Source:</label>
           <select [(ngModel)]="roll.source" class="form-select" data-live-search="true">
-            <option value="Strikes">Strikes</option>
-            <option value="Gambit">Gambit</option>
-            <option value="Crucible">Crucible</option>
-            <option value="Seasonal Activity">Seasonal Activity</option>
-            <option value="Raid">Raid</option>
-            <option value="Dungeon">Dungeon</option>
-            <option value="Engram">Engram</option>
+            <optgroup label="PvE">
+              <option value="Strikes">Strikes</option>
+              <option value="Nightfall">Nightfall</option>
+              <option value="Dungeon">Dungeon</option>
+              <option value="Raid">Raid</option>
+              <option value="Battlegrounds">Battlegrounds</option>
+              <option value="Seasonal Activity">Seasonal Activity</option>
+            </optgroup>
+            <optgroup label="PvP">
+              <option value="Gambit">Gambit</option>
+              <option value="Crucible">Crucible</option>
+              <option value="Trials of Osiris">Trials of Osiris</option>
+              <option value="Iron Banner">Iron Banner</option>
+            </optgroup>
           </select>
         </p>
-        
       </mat-card-content>
       <mat-card-actions>
         <div class="form-check">
